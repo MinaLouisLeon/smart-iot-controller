@@ -1,4 +1,5 @@
 import { IonApp ,IonPage,setupIonicReact} from '@ionic/react';
+import {app} from "./Firebase/FirebaseConfig";
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -19,13 +20,15 @@ import '@ionic/react/css/display.css';
 import "react-grid-layout/css/styles.css";
 import "react-resizable/css/styles.css";
 
+import Home from './pages/Home/Home';
+
 setupIonicReact();
 
 const App = () => {
   return(
     <IonApp>
       <IonPage>
-      <h1>test</h1>
+      <Home/>
       </IonPage>
     </IonApp>
   )

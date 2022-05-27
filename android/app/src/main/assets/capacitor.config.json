@@ -1,0 +1,6 @@
+{
+	"appId": "com.m2l.smart.iot.controller",
+	"appName": "Smart IOT Controller",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
