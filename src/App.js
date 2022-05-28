@@ -1,5 +1,8 @@
 import { IonApp ,IonPage,setupIonicReact} from '@ionic/react';
 import {app} from "./Firebase/FirebaseConfig";
+
+import "tachyons";
+
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 

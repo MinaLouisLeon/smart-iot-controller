@@ -28,6 +28,9 @@ const GridComp = () => {
     (state) => state.gridViewSlice.layoutObj.gridLayouts
   );
   const buttons = useSelector((state) => state.gridViewSlice.layoutObj.buttons);
+  const displays = useSelector(
+    (state) => state.gridViewSlice.layoutObj.displays
+  );
   const isHeaderEnabled = useSelector(
     (state) => state.gridViewSlice.layoutObj.isHeaderEnabled
   );
@@ -53,7 +56,7 @@ const GridComp = () => {
               <GridLayout
                 className="layout"
                 layout={gridLayouts}
-                cols={3}
+                cols={5}
                 rowHeight={35}
                 width={size.width}
               >
@@ -65,6 +68,18 @@ const GridComp = () => {
                     >
                       {buttons[index].name}
                     </IonButton>
+                  );
+                })}
+                {Object.keys(displays).map((index) => {
+                  return (
+                    <div
+                      className="shadow-1 br2 mt2 mb2"
+                      key={displays[index].key}
+                    >
+                      <span className="pa1 fw6 f4 tc shadow-1">
+                        {displays[index].header}
+                      </span>
+                    </div>
                   );
                 })}
               </GridLayout>

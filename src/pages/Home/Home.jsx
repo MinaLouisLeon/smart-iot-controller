@@ -15,7 +15,7 @@ const Home = () => {
         if(res !== false){
             dispatch(setLayoutData(res));
         }else{
-            console.log("error importing layout")
+            alert("error importing layout")
         }
     }
     const getUidFromNativeStorage = async () => {

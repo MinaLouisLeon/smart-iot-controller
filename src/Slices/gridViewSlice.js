@@ -1,7 +1,10 @@
 import {createSlice} from '@reduxjs/toolkit';
 
 const initialState = {
-    layoutObj : {},
+    layoutObj : {
+        buttons : [],
+        displays : []
+    },
     isLayoutReady : false,
 };
 
