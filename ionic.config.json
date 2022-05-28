@@ -1,0 +1,7 @@
+{
+  "name": "Smart IOT Controller",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

@@ -1,7 +1,7 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.m2l.smart.iot.controller',
+  appId: 'io.ionic.starter',
   appName: 'Smart IOT Controller',
   webDir: 'build',
   bundledWebRuntime: false

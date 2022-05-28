@@ -1,6 +1,9 @@
 {
-	"appId": "com.m2l.smart.iot.controller",
+	"appId": "io.ionic.starter",
 	"appName": "Smart IOT Controller",
 	"webDir": "build",
-	"bundledWebRuntime": false
+	"bundledWebRuntime": false,
+	"server": {
+		"url": "http://10.0.0.12:8100"
+	}
 }

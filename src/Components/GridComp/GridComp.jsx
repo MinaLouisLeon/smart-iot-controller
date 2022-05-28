@@ -23,6 +23,11 @@ const GridContainer = styled.div`
   width: ${(props) => props.widthValue.toString() + "px"};
 `;
 
+const HeaderContainer = styled.div`
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+`
+
 const GridComp = () => {
   const gridLayouts = useSelector(
     (state) => state.gridViewSlice.layoutObj.gridLayouts
@@ -76,9 +81,9 @@ const GridComp = () => {
                       className="shadow-1 br2 mt2 mb2"
                       key={displays[index].key}
                     >
-                      <span className="pa1 fw6 f4 tc shadow-1">
+                      <HeaderContainer className="pa1 fw6 f4 tc shadow-1">
                         {displays[index].header}
-                      </span>
+                      </HeaderContainer>
                     </div>
                   );
                 })}
